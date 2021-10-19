@@ -13,5 +13,5 @@ https://www.jetbrains.com/help/idea/typescript-support.html#top
 
 # Issues
 
-IntelliJ Issue - https://youtrack.jetbrains.com/issue/WEB-40509
-TypeScript Issue - https://github.com/microsoft/TypeScript/issues/39742
+- IntelliJ Issue - https://youtrack.jetbrains.com/issue/WEB-40509
+- TypeScript Issue - https://github.com/microsoft/TypeScript/issues/39742
