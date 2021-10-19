@@ -9,8 +9,6 @@ import '@test/bar/src/export.ts'
 
 ////////////////////////////////////////////////////////////////////////////////
 
-// Not working.
-import '@test/bar/src/exportjs'
-
 // Works.
+import '@test/bar/src/exportjs'
 import '@test/bar/src/exportjs.js'
