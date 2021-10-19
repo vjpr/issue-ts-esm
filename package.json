@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "check": "tsc --noEmit",
     "eslint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {

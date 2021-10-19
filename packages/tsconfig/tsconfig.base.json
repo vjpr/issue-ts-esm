@@ -1,12 +1,14 @@
 {
   "compilerOptions":{
-    "module": "nodenext", // Instead of: es2022
+    "module": "nodenext", // Alternative: `es2022`.
     // `nodenext` causes error in IntelliJ TypeScript compile.
     //   Error:(6, 25) TS6046: Argument for '--moduleResolution' option must be: 'node', 'classic'.
     "moduleResolution": "nodenext",
     // --
-    "target": "esnext",
+    "target": "esnext", // NOTE: `es2022` is not supported for this setting in tsconfig.
     "allowJs": true,
-    "strict": true
+    "strict": true,
+    "noEmit": true,
+    "outDir": "lib"
   }
 }
