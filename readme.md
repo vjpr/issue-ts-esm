@@ -2,6 +2,8 @@
 
 # Repro
 
+- `pnpm install`
+- Open in IntelliJ
 - Go to `packages/foo/index.ts`
 - Hold `cmd` key and hover/click on imports.
 - Some work, some don't.
