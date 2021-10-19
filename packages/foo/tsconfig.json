@@ -1,0 +1,8 @@
+{
+  "extends": "./node_modules/@test/tsconfig/tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": "src",
+    "moduleResolution": "nodenext",
+  }
+}

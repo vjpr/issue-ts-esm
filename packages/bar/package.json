@@ -1,0 +1,13 @@
+{
+  "name": "@test/bar",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "exports": {
+    "./export": "./src/export.ts",
+    "./exportjs": "./src/exportjs.js"
+  },
+  "dependencies": {
+    "@test/tsconfig": "workspace:^0.0.1"
+  }
+}

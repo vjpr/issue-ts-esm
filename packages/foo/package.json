@@ -1,0 +1,13 @@
+{
+  "name": "@test/foo",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "@test/bar": "workspace:^0.0.1",
+    "@test/tsconfig": "workspace:^0.0.1"
+  },
+  "exports": {
+    "./": "src/index.ts"
+  }
+}

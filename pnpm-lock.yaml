@@ -1,0 +1,57 @@
+lockfileVersion: 5.3
+
+importers:
+
+  .:
+    specifiers:
+      typescript: ^4.5.0-beta
+    dependencies:
+      typescript: 4.5.0-beta
+
+  packages/bar:
+    specifiers:
+      '@test/tsconfig': workspace:^0.0.1
+    dependencies:
+      '@test/tsconfig': link:../tsconfig
+
+  packages/foo:
+    specifiers:
+      '@test/bar': workspace:^0.0.1
+      '@test/tsconfig': workspace:^0.0.1
+      bar: ^0.1.2
+    dependencies:
+      '@test/bar': link:../bar
+      '@test/tsconfig': link:../tsconfig
+      bar: 0.1.2
+
+packages:
+
+  /bar/0.1.2:
+    resolution: {integrity: sha1-7DbYDF/qERH+HjLJ2zimEFMiUVU=}
+    hasBin: true
+    dependencies:
+      optimist: 0.2.8
+      watch: 0.3.3
+    dev: false
+
+  /optimist/0.2.8:
+    resolution: {integrity: sha1-6YGrfiaLRXlIWTtVZ0wJmoFcrDE=}
+    dependencies:
+      wordwrap: 0.0.3
+    dev: false
+
+  /typescript/4.5.0-beta:
+    resolution: {integrity: sha512-7PvWhki2lwukaR9osVhFnNzxaE4LM+gC94dlwcvS+Tqz8+U65va7FbKo02bT+/MFlnMPM8bsPUXvHiMD/Mg3Jg==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: false
+
+  /watch/0.3.3:
+    resolution: {integrity: sha1-Kqd2cW7UY0ZNuqLC5PnGrKHi+jw=}
+    engines: {'0': node >=0.1.95}
+    dev: false
+
+  /wordwrap/0.0.3:
+    resolution: {integrity: sha1-o9XabNXAvAAI03I0u68b7WMFkQc=}
+    engines: {node: '>=0.4.0'}
+    dev: false
