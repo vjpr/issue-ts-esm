@@ -28,6 +28,13 @@ import '@test/bar/src/exportjs.js'
 
 ```
 
+- Run action `TypeScript Compile`. After some time you will see this error:
+
+```
+/Users/Vaughan/dev/code/issue-ts-esm/packages/bar/tsconfig.json
+Error:(6, 25) TS6046: Argument for '--moduleResolution' option must be: 'node', 'classic'.
+```
+
 - Run `npm run check` which runs `tsc --noEmit`.
   - Notice there are no errors and it works properly outside of IntelliJ
 
