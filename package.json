@@ -4,9 +4,15 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "eslint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "typescript": "^4.5.0-beta"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "eslint": "^8.0.1"
   }
 }
